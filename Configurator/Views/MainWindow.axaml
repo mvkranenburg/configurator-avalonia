@@ -21,14 +21,14 @@
             <ItemsControl VerticalAlignment="Top" ItemsSource="{Binding ActivityBarItemsTop}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <ToggleButton i:Attached.Icon="{Binding Icon}"/>
+                        <ToggleButton i:Attached.Icon="{Binding Icon}" FontSize="30"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
             <ItemsControl VerticalAlignment="Bottom" ItemsSource="{Binding ActivityBarItemsBottom}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <ToggleButton i:Attached.Icon="{Binding Icon}"/>
+                        <ToggleButton i:Attached.Icon="{Binding Icon}" FontSize="30"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

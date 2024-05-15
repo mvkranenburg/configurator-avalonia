@@ -25,7 +25,10 @@ public partial class MainWindowViewModel : ViewModelBase
     {
         ActivityBarItems =
         [
-            new NetworkExplorerViewModel()
+            new NetworkExplorerViewModel(),
+            new ConfigurationViewModel(),
+            new ScopeViewModel(),
+            new SettingsViewModel()
         ];
     }
 }
