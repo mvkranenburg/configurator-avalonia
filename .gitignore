@@ -14,3 +14,9 @@
 # Build results
 [Bb]in/
 [Oo]bj/
+
+# Draw.io backup files
+*.drawio.bkp
+
+# MacOS desktop services storage files
+.DS_Store

@@ -1,0 +1,48 @@
+<mxfile host="Electron" modified="2024-05-15T20:04:14.677Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="GQ3NI7_cfwmlUB8iK4K7" version="22.1.18" type="device" pages="2">
+  <diagram name="Light" id="o5SLjlr2Yu2XFRM_OpYf">
+    <mxGraphModel dx="988" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OtKzykHet-BzGJU3JNpJ-1" value="WorkArea" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="480" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="OtKzykHet-BzGJU3JNpJ-2" value="Activity&lt;br&gt;Bar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="40" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="OtKzykHet-BzGJU3JNpJ-4" value="StatusBar" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="620" width="680" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OtKzykHet-BzGJU3JNpJ-7" value="SideBar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="160" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="OtKzykHet-BzGJU3JNpJ-10" value="Panel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="520" width="480" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Dark" id="tv6vpU8ghixUmt3LsUyE">
+    <mxGraphModel dx="1433" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="3vRS4yDyL13gJxlrZ6Pl-0" />
+        <mxCell id="3vRS4yDyL13gJxlrZ6Pl-1" parent="3vRS4yDyL13gJxlrZ6Pl-0" />
+        <mxCell id="3vRS4yDyL13gJxlrZ6Pl-2" value="WorkArea" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#ffffff;fontSize=10;fontColor=#ffffff;" vertex="1" parent="3vRS4yDyL13gJxlrZ6Pl-1">
+          <mxGeometry x="280" y="160" width="480" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="3vRS4yDyL13gJxlrZ6Pl-3" value="Activity&lt;br&gt;Bar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#ffffff;fontSize=10;fontColor=#ffffff;" vertex="1" parent="3vRS4yDyL13gJxlrZ6Pl-1">
+          <mxGeometry x="80" y="160" width="40" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="3vRS4yDyL13gJxlrZ6Pl-4" value="StatusBar" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;strokeColor=#ffffff;fontColor=#ffffff;" vertex="1" parent="3vRS4yDyL13gJxlrZ6Pl-1">
+          <mxGeometry x="80" y="620" width="680" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3vRS4yDyL13gJxlrZ6Pl-5" value="SideBar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#ffffff;fontSize=10;fontColor=#ffffff;" vertex="1" parent="3vRS4yDyL13gJxlrZ6Pl-1">
+          <mxGeometry x="120" y="160" width="160" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="3vRS4yDyL13gJxlrZ6Pl-6" value="Panel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#ffffff;fontSize=10;fontColor=#ffffff;" vertex="1" parent="3vRS4yDyL13gJxlrZ6Pl-1">
+          <mxGeometry x="280" y="520" width="480" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
