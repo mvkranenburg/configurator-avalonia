@@ -3,6 +3,7 @@
         xmlns:vm="using:Configurator.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="https://github.com/projektanker/icons.avalonia"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Configurator.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -15,6 +16,31 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="Auto, *, 4, 4*" ShowGridLines="True">
+        <Panel Grid.Row="1" Grid.Column="0" Name="ActivityBar">
+            <ItemsControl VerticalAlignment="Top" ItemsSource="{Binding ActivityBarItemsTop}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <ToggleButton i:Attached.Icon="{Binding Icon}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <ItemsControl VerticalAlignment="Bottom" ItemsSource="{Binding ActivityBarItemsBottom}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <ToggleButton i:Attached.Icon="{Binding Icon}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Panel>
+
+        <ContentControl Grid.Row="1" Grid.Column="1" Name="SideBar"/>
+
+        <GridSplitter Grid.Row="1" Grid.Column="2" />
+
+        <ContentControl Grid.Row="1" Grid.Column="3" Name="WorkArea"/>
+
+        <ContentControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Name="StatusBar" />
+    </Grid>
 
 </Window>

@@ -1,8 +1,31 @@
-﻿namespace Configurator.ViewModels;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+
+namespace Configurator.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-#pragma warning disable CA1822 // Mark members as static
-    public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+    /// <summary>
+    /// Activity view models
+    /// </summary>
+    public ObservableCollection<IActivityViewModel> ActivityBarItems { get; set; }
+
+    /// <summary>
+    /// Filtered top aligned activity view models 
+    /// </summary>
+    public IEnumerable<IActivityViewModel> ActivityBarItemsTop => ActivityBarItems.Where(x => x.Alignment == ActivityAlignment.Top);
+
+    /// <summary>
+    /// Filtered bottom aligned activity view models 
+    /// </summary>
+    public IEnumerable<IActivityViewModel> ActivityBarItemsBottom => ActivityBarItems.Where(x => x.Alignment == ActivityAlignment.Bottom);
+
+    public MainWindowViewModel()
+    {
+        ActivityBarItems =
+        [
+            new NetworkExplorerViewModel()
+        ];
+    }
 }
