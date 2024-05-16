@@ -14,12 +14,12 @@ public partial class MainWindowViewModel : ViewModelBase
     /// <summary>
     /// Filtered top aligned activity view models 
     /// </summary>
-    public IEnumerable<IActivityViewModel> ActivityBarItemsTop => ActivityBarItems.Where(x => x.Alignment == ActivityAlignment.Top);
+    public IEnumerable<IActivityViewModel> ActivityBarItemsTop => ActivityBarItems.Where(x => x.Alignment == ActivityBarAlignment.Top);
 
     /// <summary>
     /// Filtered bottom aligned activity view models 
     /// </summary>
-    public IEnumerable<IActivityViewModel> ActivityBarItemsBottom => ActivityBarItems.Where(x => x.Alignment == ActivityAlignment.Bottom);
+    public IEnumerable<IActivityViewModel> ActivityBarItemsBottom => ActivityBarItems.Where(x => x.Alignment == ActivityBarAlignment.Bottom);
 
     public MainWindowViewModel()
     {

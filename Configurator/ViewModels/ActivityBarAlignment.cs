@@ -1,6 +1,6 @@
 namespace Configurator.ViewModels;
 
-public enum ActivityAlignment
+public enum ActivityBarAlignment
 {
     /// <summary>
     /// Aligned to top side
