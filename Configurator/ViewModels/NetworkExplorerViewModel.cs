@@ -1,6 +1,8 @@
+using CommunityToolkit.Mvvm.ComponentModel;
+
 namespace Configurator.ViewModels;
 
-public class NetworkExplorerViewModel : IActivityViewModel
+public partial class NetworkExplorerViewModel : ViewModelBase, IActivityViewModel
 {
     /// <inheritdoc/>
     public ActivityBarAlignment Alignment => ActivityBarAlignment.Top;
@@ -10,4 +12,11 @@ public class NetworkExplorerViewModel : IActivityViewModel
 
     /// <inheritdoc/>
     public string Description => "Network explorer";
+
+    /// <inheritdoc/>
+    public string SideBar => Description;
+
+    /// <inheritdoc/>
+    [ObservableProperty]
+    public bool _isSelected;
 }

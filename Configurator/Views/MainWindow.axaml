@@ -21,20 +21,27 @@
             <ItemsControl VerticalAlignment="Top" ItemsSource="{Binding ActivityBarItemsTop}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <ToggleButton i:Attached.Icon="{Binding Icon}" FontSize="24" ToolTip.Tip="{Binding Description}" Margin="5,5,5,0"/>
+                        <ToggleButton
+                            i:Attached.Icon="{Binding Icon}"
+                            FontSize="30"
+                            ToolTip.Tip="{Binding Description}"
+                            Margin="5,5,5,0"
+                            IsChecked="{Binding IsSelected, Mode=TwoWay}"
+                            Command="{Binding $parent[ItemsControl].((vm:MainWindowViewModel)DataContext).SelectActivityCommand}"
+                            CommandParameter="{Binding}"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
             <ItemsControl VerticalAlignment="Bottom" ItemsSource="{Binding ActivityBarItemsBottom}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <ToggleButton i:Attached.Icon="{Binding Icon}" FontSize="24" ToolTip.Tip="{Binding Description}" Margin="5,0,5,5"/>
+                        <ToggleButton i:Attached.Icon="{Binding Icon}" FontSize="30" ToolTip.Tip="{Binding Description}" Margin="5,0,5,5"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </Panel>
 
-        <ContentControl Grid.Row="1" Grid.Column="1" Name="SideBar"/>
+        <ContentControl Grid.Row="1" Grid.Column="1" Name="SideBar" Content="{Binding SelectedActivity.SideBar}"/>
 
         <GridSplitter Grid.Row="1" Grid.Column="2" />
 

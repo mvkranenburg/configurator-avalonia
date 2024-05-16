@@ -1,6 +1,8 @@
+using CommunityToolkit.Mvvm.ComponentModel;
+
 namespace Configurator.ViewModels;
 
-public class ConfigurationViewModel : IActivityViewModel
+public partial class ConfigurationViewModel : ViewModelBase, IActivityViewModel
 {
     /// <inheritdoc/>
     public ActivityBarAlignment Alignment => ActivityBarAlignment.Top;
@@ -10,4 +12,11 @@ public class ConfigurationViewModel : IActivityViewModel
 
     /// <inheritdoc/>
     public string Description => "System configuration";
+
+    /// <inheritdoc/>
+    public string SideBar => Description;
+
+    /// <inheritdoc/>
+    [ObservableProperty]
+    public bool _isSelected;
 }

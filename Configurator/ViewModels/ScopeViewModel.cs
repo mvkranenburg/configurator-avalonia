@@ -1,6 +1,8 @@
+using CommunityToolkit.Mvvm.ComponentModel;
+
 namespace Configurator.ViewModels;
 
-public class ScopeViewModel : IActivityViewModel
+public partial class ScopeViewModel : ViewModelBase, IActivityViewModel
 {
     /// <inheritdoc/>
     public ActivityBarAlignment Alignment => ActivityBarAlignment.Top;
@@ -10,4 +12,11 @@ public class ScopeViewModel : IActivityViewModel
 
     /// <inheritdoc/>
     public string Description => "Scope";
+
+    /// <inheritdoc/>
+    public string SideBar => Description;
+
+    /// <inheritdoc/>
+    [ObservableProperty]
+    public bool _isSelected;
 }
